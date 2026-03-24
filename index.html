@@ -36,8 +36,21 @@
 /*	Because the template is slightly different, size-wise, with images, this needs to be set here
 	If you don't want to use the template's images, you can also delete the following two lines. */
 		
-	#header 	{ margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
-	#headerimg 	{ margin: 7px 9px 0; height: 192px; width: 740px; } 
+#header { 
+    background: url("./wp-content/themes/roundhousekick/images/roundhousekick_header.png") no-repeat bottom center !important;
+    height: 198px !important; 
+    width: 758px !important;
+    display: block !important;
+}
+
+/* 2. Das überlagernde Element transparent machen */
+#headerimg { 
+    background: none !important; 
+    border: none !important;
+    height: 192px !important; 
+    width: 740px !important;
+    cursor: pointer; /* Falls es ein Link zur Startseite sein soll */
+}
 
 /* 	To ease the insertion of a personal header image, I have done it in such a way,
 	that you simply drop in an image called 'personalheader.jpg' into your /images/
